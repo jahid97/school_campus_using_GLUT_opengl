@@ -21,24 +21,40 @@ This project simulates a school campus using 2D and 3D graphics with the help of
 
 ---
 
+## Output
+
+![School Campus Simulation Output](Output_image.jpg)
+
+---
+
 ## Installation
 
-### Prerequisites
+### Prerequisites To run this project.
 
-1. **OpenGL Development Environment**: Ensure you have OpenGL and GLUT installed on your system.
-   - For Windows: Install **freeglut** or similar libraries.
-   - For Linux: Use `sudo apt-get install freeglut3-dev`.
-2. **Code::Blocks IDE**: Required for building and running the project files.
+### Step 1: GLUT Setup
 
-### Steps
+1. Download `glut-3.7.6-bin` from Google.
+2. Unzip the file. There will be at least three files: `glut.h`, `glut32.dll`, and `glut32.lib`.
+3. Navigate to `C:\Program Files (x86)\CodeBlocks\MinGW\include`.
+   - Paste `glut.h` into the `GL` folder.
+4. Navigate to `C:\Program Files (x86)\CodeBlocks\MinGW\lib`.
+   - Paste `glut32.lib`.
+5. Navigate to `C:\Windows\SysWOW64`.
+   - Paste `glut32.dll`.
+   - **Note:** If your Operating System is 32-bit, the folder might be `C:\Windows\System32`.
 
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/your-username/school_campus_using_GLUT_opengl.git
-   ```
-2. Open the `2_D_basic.cbp` file in Code::Blocks.
-3. Configure the OpenGL and GLUT libraries in your IDE settings if not already configured.
-4. Build and run the project from Code::Blocks.
+### Step 2: Linker Settings for Code::Blocks
+
+1. Go to `Settings` > `Compiler` > `Linker Settings` and press `Clear`.
+2. Press `Add`, then navigate to `C:\Program Files (x86)\CodeBlocks\MinGW\lib`.
+3. Add the following files:
+   - `glut32.lib`
+   - `libglu32.a`
+   - `libopengl32.a`
+4. Press `OK`.
+
+### Step 3:
+Open the code block later, open the project, and run the .cbp file.
 
 ---
 
@@ -71,7 +87,7 @@ This project simulates a school campus using 2D and 3D graphics with the help of
 
 ## Contributing
 
-Contributions are welcome! Feel free to fork this repository and submit a pull request with your enhancements or bug fixes.
+Contributions are welcome! You can fix this repository and submit a pull request with enhancements or bug fixes.
 
 ---
 
