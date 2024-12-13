@@ -75,22 +75,15 @@ Contributions are welcome! Feel free to fork this repository and submit a pull r
 
 ---
 
-## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
----
 
 ## Acknowledgments
 
 - Inspired by OpenGL's capabilities in rendering interactive graphics.
-- Thanks to the creators of Code::Blocks and GLUT for their development tools.
 
 ---
 
 ## Contact
 
-For questions or feedback, feel free to reach out:
-- GitHub: [your-username](https://github.com/your-username)
-- Email: your-email@example.com
+For questions or feedback, feel free to reach out via email
 
